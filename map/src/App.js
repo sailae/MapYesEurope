@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import { render } from 'react-dom';
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// This is where we build the main render of the map
+// This should be a fairly short file and we do the actual building in other files
+// The idea is to build components and then import them into this file
+
+class App extends React.Component {
+  render() {
+    return (
+      <div className="title">
+        <h1>Map App</h1>
+        <p>This is a subheading</p>
+      </div>
+    )
+  }
 }
 
 export default App;
