@@ -9,8 +9,8 @@
     {"id": "NM", "href": "https://yeseurope.org/north-macedonia/", "value": "geo-103"},
     {"id": "PO", "href": "https://yeseurope.org/poland/", "value": "geo-127"},
     {"id": "SP", "href": "https://yeseurope.org/spain/", "value": "geo-49"},
-    {"id": "SW", "href": "https://yeseurope.org/sweden/", "value": "geo-9"},
-    {"id": "CH", "href": "https://yeseurope.org/switzerland/", "value": "geo-9"},
-    {"id": "UK", "href": "https://yeseurope.org/united-kingdom/", "value": "geo-9"},
+    {"id": "SW", "href": "https://yeseurope.org/sweden/", "value": "geo-151"},
+    {"id": "CH", "href": "https://yeseurope.org/switzerland/", "value": "geo-28"},
+    {"id": "UK", "href": "https://yeseurope.org/united-kingdom/", "value": "geo-57"},
     {"id": "AU", "href": "https://yeseurope.org/austria/", "value": "geo-9"}
 ]
