@@ -1,3 +1,16 @@
 [
-    {"id": "AU", "href": "https://yeseurope.org/finland/", "value": "geo-9"}
+    {"id": "AL", "href": "https://yeseurope.org/albania/", "value": "geo-2"},
+    {"id": "BE", "href": "https://yeseurope.org/belgium/", "value": "geo-12"},
+    {"id": "FI", "href": "https://yeseurope.org/finland/", "value": "geo-52"},
+    {"id": "FR", "href": "https://yeseurope.org/france/", "value": "geo-55"},
+    {"id": "DE", "href": "https://yeseurope.org/germany/", "value": "geo-41"},
+    {"id": "GR", "href": "https://yeseurope.org/greece/", "value": "geo-64"},
+    {"id": "IT", "href": "https://yeseurope.org/italy/", "value": "geo-79"},
+    {"id": "NM", "href": "https://yeseurope.org/north-macedonia/", "value": "geo-103"},
+    {"id": "PO", "href": "https://yeseurope.org/poland/", "value": "geo-127"},
+    {"id": "SP", "href": "https://yeseurope.org/spain/", "value": "geo-49"},
+    {"id": "SW", "href": "https://yeseurope.org/sweden/", "value": "geo-9"},
+    {"id": "CH", "href": "https://yeseurope.org/switzerland/", "value": "geo-9"},
+    {"id": "UK", "href": "https://yeseurope.org/united-kingdom/", "value": "geo-9"},
+    {"id": "AU", "href": "https://yeseurope.org/austria/", "value": "geo-9"}
 ]

@@ -24,7 +24,7 @@ const MapChart = ({ setTooltipContent }) => {
         <Geographies geography={geoUrl}>
           {({ geographies }) =>
             geographies.map(geo => {
-              const cur = allStates.find(s => s.val === geo.id);
+              const cur = allStates.find(s => s.value === geo.rsmKey);
               return (
               <Geography
                 key={geo.rsmKey}
@@ -33,7 +33,7 @@ const MapChart = ({ setTooltipContent }) => {
                 stroke="#8BBE86"
                 onClick={(e) => {
                   e.preventDefault();
-                  window.location.href=cur.href
+                  window.location.href=cur.href;
                 }}
                 style={{
                   default: {
