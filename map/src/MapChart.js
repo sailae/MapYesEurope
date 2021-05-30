@@ -15,18 +15,18 @@ const MapChart = () => {
       projection="geoAzimuthalEqualArea"
       projectionConfig={{
         rotate: [-20.0, -52.0, 0],
-        scale: 700
+        scale: 850
       }}
     >
-      <Graticule stroke="#EAEAEC" />
+      <Graticule display="none" />
       <Geographies geography={geoUrl}>
         {({ geographies }) =>
           geographies.map(geo => (
             <Geography
               key={geo.rsmKey}
               geography={geo}
-              fill="#9998A3"
-              stroke="#EAEAEC"
+              fill="#fff"
+              stroke="#8BBE86"
             />
           ))
         }
