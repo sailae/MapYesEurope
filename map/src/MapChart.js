@@ -31,9 +31,9 @@ const MapChart = ({ setTooltipContent }) => {
                 geography={geo}
                 fill="#fff"
                 stroke="#8BBE86"
-                onClick={() => {
-                  let path = cur.find("href");
-                  history.pushState(path);
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href=cur.href
                 }}
                 style={{
                   default: {
