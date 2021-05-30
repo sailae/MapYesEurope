@@ -1,27 +1,17 @@
 import React, { memo } from "react";
 import {
-  ZoomableGroup,
   ComposableMap,
   Geographies,
-  Geography,
-  Graticule
+  Geography
 } from "react-simple-maps";
+import { useHistory } from "react-router-dom";
 import allStates from "./data.json";
 
 const geoUrl =
   "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
 
-  const rounded = num => {
-    if (num > 1000000000) {
-      return Math.round(num / 100000000) / 10 + "Bn";
-    } else if (num > 1000000) {
-      return Math.round(num / 100000) / 10 + "M";
-    } else {
-      return Math.round(num / 100) / 10 + "K";
-    }
-  };
-
 const MapChart = ({ setTooltipContent }) => {
+  const history = useHistory();
   return (
     <ComposableMap
       projection="geoAzimuthalEqualArea"
@@ -30,7 +20,6 @@ const MapChart = ({ setTooltipContent }) => {
         scale: 850
       }}
     >
-      <Graticule display="none" />
 
         <Geographies geography={geoUrl}>
           {({ geographies }) =>
@@ -42,12 +31,9 @@ const MapChart = ({ setTooltipContent }) => {
                 geography={geo}
                 fill="#fff"
                 stroke="#8BBE86"
-                onMouseEnter={() => {
-                  const { NAME, POP_EST } = geo.properties;
-                  setTooltipContent(`${NAME} — ${rounded(POP_EST)}`);
-                }}
-                onMouseLeave={() => {
-                  setTooltipContent("");
+                onClick={() => {
+                  let path = cur.find("href");
+                  history.pushState(path);
                 }}
                 style={{
                   default: {
