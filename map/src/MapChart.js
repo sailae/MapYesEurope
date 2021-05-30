@@ -6,6 +6,7 @@ import {
   Geography,
   Graticule
 } from "react-simple-maps";
+import allStates from "./data.json";
 
 const geoUrl =
   "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
@@ -30,10 +31,12 @@ const MapChart = ({ setTooltipContent }) => {
       }}
     >
       <Graticule display="none" />
-      <ZoomableGroup>
+
         <Geographies geography={geoUrl}>
           {({ geographies }) =>
-            geographies.map(geo => (
+            geographies.map(geo => {
+              const cur = allStates.find(s => s.val === geo.id);
+              return (
               <Geography
                 key={geo.rsmKey}
                 geography={geo}
@@ -52,19 +55,20 @@ const MapChart = ({ setTooltipContent }) => {
                     outline: "none"
                   },
                   hover: {
-                    fill: "#F53",
-                    outline: "none"
+                    fill: "#8BBE86",
+                    outline: "none",
+                    cursor: "pointer"
                   },
                   pressed: {
-                    fill: "#E42",
-                    outline: "none"
+                    fill: "#F79320",
+                    outline: "#F79320",
+                    stroke: "#F79320"
                   }
                 }}
               />
-            ))
+            )})
           }
         </Geographies>
-      </ZoomableGroup>
     </ComposableMap>
   );
 };
