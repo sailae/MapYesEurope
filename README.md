@@ -5,3 +5,8 @@ Here are some directions
 2. The App.js is the file we use to build a render method to the application
 3. index.js is for rendering the render method from App.js
 4. In the Components directory you'll find all the components for the app
+
+#8BBE86
+#72A46D
+#EDEAE5
+#E3DFD9

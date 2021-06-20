@@ -10,6 +10,7 @@ const geoUrl =
   "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
 
 const MapChart = () => {
+
   return (
     <ComposableMap
       projection="geoAzimuthalEqualArea"
@@ -27,9 +28,6 @@ const MapChart = () => {
               <Geography
                 key={geo.rsmKey}
                 geography={geo}
-                fill="#8BBE86"
-                stroke="#72A46D"
-                cursor="pointer"
                 onClick={(e) => {
                   if (cur !== undefined) {
                     e.preventDefault();
@@ -38,20 +36,20 @@ const MapChart = () => {
                 }}
                 style={{
                   default: {
-                    fill: cur !== undefined? 'fill': '#EDEAE5',
-                    stroke: cur !== undefined? 'stroke': '#E3DFD9',
+                    fill: cur !== undefined? '#8BBE86': '#EDEAE5',
+                    stroke: cur !== undefined? '#72A46D': '#E3DFD9',
                     outline: "none"
                   },
                   hover: {
-                    fill: cur !== undefined? 'fill': '#EDEAE5',
+                    fill: cur !== undefined? '#72A46D': '#EDEAE5',
                     stroke: cur !== undefined? 'stroke': '#E3DFD9',
                     outline: "none",
-                    cursor: cur !== undefined? 'cursor': "default"
+                    cursor: cur !== undefined? 'pointer': "default"
                   },
                   pressed: {
-                    fill: cur !== undefined? 'fill': '#EDEAE5',
+                    fill: cur !== undefined? '#72A46D': '#EDEAE5',
                     outline: "none",
-                    stroke: cur !== undefined? 'stroke': '#E3DFD9'
+                    stroke: cur !== undefined? '#72A46D': '#E3DFD9'
                   }
                 }}
               />
