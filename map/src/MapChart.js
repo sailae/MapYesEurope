@@ -31,7 +31,7 @@ const MapChart = () => {
                 onClick={(e) => {
                   if (cur !== undefined) {
                     e.preventDefault();
-                    window.location.href=cur.href;
+                    window.parent.location.href=cur.href;
                   }
                 }}
                 style={{
