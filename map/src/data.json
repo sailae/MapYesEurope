@@ -17,5 +17,6 @@
     {"id": "DN", "href": "https://yeseurope.org/denmark/", "value": "geo-43" },
     {"id": "SP", "href": "https://yeseurope.org/spain/", "value": "geo-49" },
     {"id": "HU", "href": "https://yeseurope.org/hungary/", "value": "geo-71" },
-    {"id": "IR", "href": "https://yeseurope.org/ireland/", "value": "geo-74" }
+    {"id": "IR", "href": "https://yeseurope.org/ireland/", "value": "geo-74" },
+    {"id": "SE", "href": "https://yeseurope.org/serbia/", "value": "geo-147"}
 ]
