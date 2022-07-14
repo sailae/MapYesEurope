@@ -6,9 +6,6 @@ import {
 } from "react-simple-maps";
 import allStates from "./data.json";
 
-const geoUrl =
-  "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
-
 const MapChart = () => {
 
   return (
@@ -20,7 +17,7 @@ const MapChart = () => {
       }}
     >
 
-        <Geographies geography={geoUrl}>
+        <Geographies geography="/features.json">
           {({ geographies }) =>
             geographies.map(geo => {
               const cur = allStates.find(s => s.value === geo.rsmKey);
