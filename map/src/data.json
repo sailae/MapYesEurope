@@ -18,5 +18,7 @@
     {"id": "SP", "href": "https://yeseurope.org/spain/", "value": "geo-48" },
     {"id": "HU", "href": "https://yeseurope.org/hungary/", "value": "geo-69" },
     {"id": "IR", "href": "https://yeseurope.org/ireland/", "value": "geo-72" },
-    {"id": "SE", "href": "https://yeseurope.org/serbia/", "value": "geo-143"}
+    {"id": "SE", "href": "https://yeseurope.org/serbia/", "value": "geo-143"},
+    {"id": "TU", "href": "https://yeseurope.org/turkey/", "value": "geo-158"},
+    {"id": "MA", "href": "https://yeseurope.org/malta/", "value": "geo-197"}
 ]
