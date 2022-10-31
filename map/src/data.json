@@ -22,5 +22,6 @@
     {"id": "TU", "href": "https://yeseurope.org/turkey/", "value": "geo-158"},
     {"id": "MA", "href": "https://yeseurope.org/malta/", "value": "geo-197"},
     {"id": "CY", "href": "https://yeseurope.org/cyprus/", "value": "geo-37"},
-    {"id": "NE", "href": "https://yeseurope.org/netherlands/", "value": "geo-115"}
+    {"id": "NE", "href": "https://yeseurope.org/netherlands/", "value": "geo-115"},
+    {"id": "GE", "href": "https://yeseurope.org/georgia/", "value": "geo-57"}
 ]
